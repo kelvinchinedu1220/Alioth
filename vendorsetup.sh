@@ -19,11 +19,7 @@
 #
 
 #set -o xtrace
-FDEVICE="mikona"
-FDEVICE1="alioth"
-FDEVICE2="munch"
-FDEVICE3="thyme"
-FDEVICE4="psyche"
+FDEVICE="alioth"
 THIS_DEVICE=${BASH_ARGV[2]}
 
 fox_get_target_device() {
@@ -51,7 +47,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" -o "$FOX_BUILD_DEVICE
 		exit 1
 	fi
 
-	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v26.4.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v28.1.zip
         export FOX_VANILLA_BUILD=1
     	export FOX_ENABLE_APP_MANAGER=1
 	export FOX_VIRTUAL_AB_DEVICE=1
