@@ -8,13 +8,13 @@
 # Release name
 PRODUCT_RELEASE_NAME := alioth
 
-DEVICE_PATH := device/xiaomi/mikona
+DEVICE_PATH := device/xiaomi/alioth
 
-# Inherit from mikona device
+# Inherit from alioth  device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit any OrangeFox-specific settings
-$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_mikona.mk)
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_alioth.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
