@@ -187,3 +187,10 @@ TW_INCLUDE_PYTHON := true
 
 # unified script
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/recovery/$(PRODUCT_RELEASE_NAME)/unified-script.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/unified-script.sh
+
+# PBRP flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_PATCH_AVB2 := true
+
+# Torch# Torch
+PB_TORCH_PATH := "/sys/devices/platform/flashlights_ocp8132/torch_brightness"
