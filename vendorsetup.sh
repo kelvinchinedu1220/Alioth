@@ -63,14 +63,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" -o "$FOX_BUILD_DEVICE
     	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 
     	# Device Specific Props
- 	if [ "$FOX_BUILD_DEVICE" = "$FDEVICE2" -o "$FDEVICE" = "$FDEVICE2" ]; then
-    	   echo "Device is $FDEVICE2 ..."
+ 	if [ "$FOX_BUILD_DEVICE" = "$FDEVICE" -o "$FDEVICE" = "$FDEVICE" ]; then
+    	   echo "Device is $FDEVICE ..."
  	else
     	   echo "Device is alioth ..."
 	   export TARGET_DEVICE_ALT="aliothin"
  	fi
 
-	# instruct magiskboot v24+ to always patch the vbmeta header when patching the recovery/boot image; do *not* remove!
+	# instruct magiskboot v28+ to always patch the vbmeta header when patching the recovery/boot image; do *not* remove!
         export FOX_PATCH_VBMETA_FLAG="1"
 
 	# vendor_boot-as-recovery
