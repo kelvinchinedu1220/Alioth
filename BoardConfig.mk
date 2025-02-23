@@ -205,3 +205,6 @@ SHRP_FONP_2 := sys/devices/platform/flashlights_ocp8132/torch_brightness
 
 # enable python
 TW_INCLUDE_PYTHON := true
+
+# unified script
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/recovery/$(PRODUCT_RELEASE_NAME)/unified-script.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/unified-script.sh
