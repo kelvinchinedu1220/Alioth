@@ -154,7 +154,6 @@ LC_ALL := C
 
 # broken stuff
 ALLOW_MISSING_DEPENDENCIES := true
-BUILD_BROKEN_USES_NETWORK := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true # may not really be needed
@@ -205,6 +204,3 @@ SHRP_FONP_2 := sys/devices/platform/flashlights_ocp8132/torch_brightness
 
 # enable python
 TW_INCLUDE_PYTHON := true
-
-# unified script
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/recovery/$(PRODUCT_RELEASE_NAME)/unified-script.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/unified-script.sh
